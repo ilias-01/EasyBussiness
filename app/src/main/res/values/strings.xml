@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">easyBusiness</string>
+    <string name="profile">Profile</string>
+    <string name="pseudo">Pseudo</string>
+    <string name="mail">Email</string>
+    <string name="number">Numero</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

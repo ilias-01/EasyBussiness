@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:id="@+id/modifierAd"
+    tools:context=".ModifAnnonce">
+
+    <TextView
+        android:id="@+id/entete"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="Modification d'une annonce"
+        android:textColor="#1A1818"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/champsTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entete" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="16dp"
+        android:text="Titre"
+        app:layout_constraintEnd_toStartOf="@+id/champsTitre"
+        app:layout_constraintTop_toBottomOf="@+id/entete" />
+
+    <TextView
+        android:id="@+id/prix"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="16dp"
+        android:text="Prix"
+        app:layout_constraintEnd_toStartOf="@+id/champsPrix"
+        app:layout_constraintStart_toStartOf="@+id/titre"
+        app:layout_constraintTop_toBottomOf="@+id/titre" />
+
+    <EditText
+        android:id="@+id/champsPrix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/champsTitre"
+        app:layout_constraintTop_toBottomOf="@+id/champsTitre" />
+
+    <TextView
+        android:id="@+id/ville"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:text="Ville"
+        app:layout_constraintEnd_toStartOf="@+id/champsVille"
+        app:layout_constraintStart_toStartOf="@+id/prix"
+        app:layout_constraintTop_toBottomOf="@+id/prix" />
+
+    <EditText
+        android:id="@+id/champsVille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/champsPrix"
+        app:layout_constraintTop_toBottomOf="@+id/champsPrix" />
+
+    <TextView
+        android:id="@+id/cp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        android:text="CODE POSTALE"
+        app:layout_constraintEnd_toStartOf="@+id/champsCp"
+        app:layout_constraintStart_toStartOf="@+id/ville"
+        app:layout_constraintTop_toBottomOf="@+id/ville" />
+
+    <EditText
+        android:id="@+id/champsCp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/champsVille"
+        app:layout_constraintTop_toBottomOf="@+id/champsVille" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="24dp"
+        android:text="Description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champsCp" />
+
+    <EditText
+        android:id="@+id/champsDescription"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="onClick"
+        android:text="valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/champsDescription"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

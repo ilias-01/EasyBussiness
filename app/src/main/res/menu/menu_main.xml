@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    >
+    <item
+        android:id="@+id/ic_profil"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_profile2"
+        android:orderInCategory="4"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/ic_add"
+        android:icon="@drawable/ic_add_annonce"
+        android:orderInCategory="3"
+        android:title="depot"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_save"
+        android:icon="@drawable/ic_star_saved_ad"
+        android:orderInCategory="2"
+        android:title="save"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/ic_refrech"
+        android:icon="@drawable/ic_refresh"
+        android:orderInCategory="1"
+        android:title="refrech"
+        app:showAsAction="always" />
+
+    <!--<item
+        android:id="@+id/ic_liste"
+        android:title="stor"
+        android:icon="@drawable/ic_list_items"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/ic_cam"
+        android:icon="@drawable/ic_cam"
+        android:orderInCategory="1"
+        android:title="cam"
+        app:showAsAction="always" />-->
+
+
+</menu>
